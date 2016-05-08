@@ -1,0 +1,125 @@
+<!--
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+Data model
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+<Dish>
+-dishId
+-name
+-description
+-restaurantLocationId
+-price
+-category?
+-nutrition info?
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+<DishIngredient>
+-dishIngredientId
+-dishId
+-quantity
+-quanitytUnits
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+<DishPhoto>
+-dishId
+-photoId
+-photoPath
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+<Restaurant>
+-restaurantId
+-name
+-description
+-price range
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+<RestaurantLocation>
+-locationId
+-restaurantId
+-streetAddress
+-city
+-state
+-country
+-coords
+
+ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~
+
+<Ingredient>
+-ingredientId
+-name
+-description
+-nutrition info? -> not important yet
+
+-->
+
+<!--
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+API
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+AddDish(Dish)
+
+GetDish(dId)
+
+GetDishes(DishSearch)
+
+UpdateDish(Dish)
+
+DeleteDish(dId)
+
+
+AddDishIngredient(DishIngredient)
+
+GetDishIngredient(diId)
+
+GetDishIngredients(DishIngredientSearch)
+
+UpdateDishIngredient(DishIngredient)
+
+DeleteDishIngredient(diId)
+
+
+AddRestaurant(Restaurant)
+
+GetRestaurant(rId)
+
+GetRestaurants(RestaurantSearch)
+
+UpdateRestaurant(Restaurant)
+
+DeleteRestaurant(rId)
+
+
+AddRestaurantLocation(RestaurantLocation)
+
+GetRestaurantLocation(rlId)
+
+GetRestaurantLocations(RestaurantLocationSearch)
+
+UpdateRestaurantLocation(RestaurantLocation)
+
+DeleteRestaurantLocation(rlId)
+
+
+AddIngredient(Ingredient)
+
+GetIngredient(iId)
+
+GetIngredients(IngredientSearch)
+
+UpdateIngredient(Ingredient)
+
+DeleteIngredient(iId)
+
+
+-->
+
+<h1>Disht</h1>
+<h4>Your favorite dish -- find it here</h4>
+<p>add a dish here</p>
+<p>Search: Search box here</p>
+<p>dish listing here</p>
